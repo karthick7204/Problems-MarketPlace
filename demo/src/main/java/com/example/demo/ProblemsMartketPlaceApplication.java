@@ -9,7 +9,6 @@ public class ProblemsMartketPlaceApplication {
 	public static void main(String[] args) {
 
 		SpringApplication.run(ProblemsMartketPlaceApplication.class, args);
-
 	}
 
 }
