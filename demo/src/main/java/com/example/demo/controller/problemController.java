@@ -2,23 +2,22 @@ package com.example.demo.controller;
 
 import org.springframework.web.bind.annotation.RestController;
 
-import com.example.demo.repository.problemsRepository;
+import com.example.demo.repository.ProblemsRepository;
 
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.beans.factory.annotation.Autowired;
-import com.example.demo.model.problems;
+import com.example.demo.model.Problems;
 
 
 @RestController
 public class problemController {
     
     @Autowired
-    private problemsRepository repo;
+    private ProblemsRepository repo;
 
     @PostMapping("/problems")
-    public problems createProblems(@RequestBody problems problem) {
+    public Problems createProblems(@RequestBody Problems problem) {
         return repo.save(problem);
     }
-    
 }

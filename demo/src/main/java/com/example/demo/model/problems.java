@@ -12,11 +12,10 @@ import org.springframework.data.annotation.Id;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class problems {
+public class Problems {
     @Id
     private String id;
     private String title;
     private String description;
     
-
 }
